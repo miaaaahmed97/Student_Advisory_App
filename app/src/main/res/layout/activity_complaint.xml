@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/black"
+android:textColor="@android:color/white"
+tools:context=".ComplaintActivity"
+tools:layout_editor_absoluteY="81dp">
+
+<Spinner
+    android:id="@+id/spinner1"
+    android:layout_width="0dp"
+    android:layout_height="29dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="55dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="47dp"
+    android:background="@android:color/white"
+    app:layout_constraintBottom_toTopOf="@+id/userComplaint_editText"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/selectCourse_textView"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/selectCourse_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginEnd="14dp"
+    android:layout_marginRight="14dp"
+    android:text="@string/choose_courses"
+    android:textColor="@android:color/white"
+    app:layout_constraintEnd_toStartOf="@+id/spinner1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/spinner1" />
+
+<TextView
+    android:id="@+id/complaint_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="131dp"
+    android:layout_marginEnd="31dp"
+    android:layout_marginRight="31dp"
+    android:text="@string/complaint_textview"
+    android:textColor="@android:color/white"
+    app:layout_constraintEnd_toStartOf="@+id/userComplaint_editText"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/userComplaint_editText"
+    android:layout_width="0dp"
+    android:layout_height="175dp"
+    android:layout_marginEnd="19dp"
+    android:layout_marginRight="19dp"
+    android:background="@android:color/white"
+    android:gravity="top"
+    android:ems="10"
+    android:inputType="textMultiLine"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/complaint_textView"
+    app:layout_constraintTop_toTopOf="@+id/complaint_textView" />
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="39dp"
+    android:layout_marginEnd="28dp"
+    android:layout_marginRight="28dp"
+    android:background="@android:color/holo_blue_dark"
+    android:text="@string/register_button"
+    android:textColor="@android:color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/userComplaint_editText" />
+
+<!--<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello World!"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />-->
+
+</android.support.constraint.ConstraintLayout>

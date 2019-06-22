@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/complain2"
+        tools:context=".RegisterComplains">
+
+
+
+    <LinearLayout
+        android:id="@+id/LoginView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+
+        <EditText
+            android:id="@+id/EditTextFeedbackBody"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:inputType="textMultiLine"
+            android:lines="15"
+            android:textColor="#FFF"
+            android:textSize="16sp"></EditText>
+        
+        <Button
+            android:id="@+id/ButtonSendFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:onClick="sendFeedback"
+            android:text="REGISTER"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    </RelativeLayout>
